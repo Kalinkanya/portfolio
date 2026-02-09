@@ -1,0 +1,75 @@
+@import url('./header.css');
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('../assets/fonts/Mulish-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --font-heading: 'Oswald', sans-serif;
+  --font-base: 'Mulish', sans-serif;
+
+  --color-dark: #222222;
+  --color-white: #FFFFFF;
+
+  --container-width: 1400px;
+  --container-padding-x: 20px;
+  --container-padding-y: 60px;
+
+  --border: 1px solid var(--color-dark);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+a, a:link, a:visited  {
+  text-decoration: none;
+}
+
+a:hover  {
+  text-decoration: none;
+}
+
+input, button {
+	font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+label {
+	cursor: pointer;
+}
+
+body {
+  font-family: var(--font-base);
+  font-weight: 400;
+}
+
+header {
+  background-color: var(--color-dark);
+}

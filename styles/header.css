@@ -1,0 +1,35 @@
+header {
+  background-color: var(--color-dark);
+}
+
+.header-container {
+  width: calc(var(--container-width) + (var(--container-padding-x) * 2));
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-container__icon-container {
+  padding: 20px;
+}
+
+.header-container__nav {
+  margin-left: auto;
+}
+
+.header-container__nav-list {
+  display: flex;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.header-container__nav-item {
+  padding-inline: 20px;
+  padding-block: 18px;
+}
+
+.header-container__nav-item a {
+    color: var(--color-white);
+}
