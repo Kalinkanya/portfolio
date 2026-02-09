@@ -1,4 +1,5 @@
 @import url('./header.css');
+@import url('./hero.css');
 
 @font-face {
     font-family: 'Mulish';
@@ -70,6 +71,11 @@ body {
   font-weight: 400;
 }
 
-header {
+.header {
   background-color: var(--color-dark);
+}
+
+.container {
+  width: calc(var(--container-width) + (var(--container-padding-x) * 2));
+  margin: 0 auto;
 }
