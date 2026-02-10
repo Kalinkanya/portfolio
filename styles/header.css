@@ -1,4 +1,4 @@
-.header-container {
+.header__container {
   height: 60px;
   display: flex;
 }
@@ -26,4 +26,11 @@
 
 .header__menu-link {
   color: var(--color-white);
+  transition: color 0.3s;
+}
+
+@media (hover: hover){
+  .header__menu-link:hover {
+      color: var(--color-accent);
+  }
 }

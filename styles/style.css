@@ -12,7 +12,15 @@
 @font-face {
     font-family: 'Oswald';
     src: url('../assets/fonts/Oswald-Regular.woff2') format('woff2');
-    font-weight: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald-Light.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
@@ -23,6 +31,7 @@
 
   --color-dark: #222222;
   --color-white: #FFFFFF;
+  --color-accent: #FF3C3C;
 
   --container-width: 1400px;
   --container-padding-x: 20px;
@@ -71,11 +80,12 @@ body {
   font-weight: 400;
 }
 
-.header {
+.header, .hero__section {
   background-color: var(--color-dark);
+  color: var(--color-white);
 }
 
 .container {
-  width: calc(var(--container-width) + (var(--container-padding-x) * 2));
-  margin: 0 auto;
+  max-width: calc(var(--container-width) + (var(--container-padding-x) * 2));
+  margin-inline: auto;
 }
