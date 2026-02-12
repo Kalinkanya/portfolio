@@ -1,6 +1,7 @@
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about.css');
+@import url('./portfolio.css');
 
 @font-face {
     font-family: 'Mulish';
@@ -81,7 +82,7 @@ body {
   font-weight: 400;
 }
 
-.header, .hero__section {
+.header, .hero__section, .portfolio__section {
   background-color: var(--color-dark);
   color: var(--color-white);
 }
