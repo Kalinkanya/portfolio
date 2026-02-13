@@ -3,6 +3,7 @@
 @import url('./about.css');
 @import url('./portfolio.css');
 @import url('./price.css');
+@import url('./faq.css');
 
 @font-face {
     font-family: 'Mulish';
@@ -91,7 +92,10 @@ body {
   font-weight: 400;
 }
 
-.header, .hero__section, .portfolio__section {
+.header,
+.hero__section,
+.portfolio__section,
+.faq__section {
   background-color: var(--color-dark);
   color: var(--color-white);
 }
