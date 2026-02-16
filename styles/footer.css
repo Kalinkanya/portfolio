@@ -63,6 +63,7 @@
   text-transform: uppercase;
   transition: all 0.5s;
   margin-inline: 20px;
+  color: var(--color-white)
 }
 
 @media (hover: hover) {
