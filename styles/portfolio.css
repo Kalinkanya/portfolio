@@ -23,6 +23,7 @@
   margin-top: 40px;
   overflow: hidden;
   height: 100%;
+  margin-inline: -20px;
 }
 
 .portfolio__slider-wrapper {
