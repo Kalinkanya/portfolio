@@ -1,5 +1,4 @@
 .faq__container {
-  height: 724px;
   padding: 60px 20px;
   display: flex;
   gap: 40px;
@@ -84,4 +83,10 @@
 
 .faq__answer.faq__answer_visible {
   display: block;
+}
+
+@media (max-width: 850px) {
+  .faq__container {
+    flex-direction: column;
+  }
 }
