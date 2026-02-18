@@ -1,7 +1,6 @@
 .hero__container {
   display: flex;
   gap: 20px;
-  height: 862px;
 }
 
 .hero__sidebar {
@@ -154,21 +153,13 @@
   .hero__photo-wrapper {
     min-width: 33.95%;
   }
-}
 
-.hero__container {
-  height: 758px;
-}
-
-.hero__sidebar-line {
-  height: 432px;
+  .hero__sidebar-line {
+    height: 432px;
+  }
 }
 
 @media (max-width: 760px) {
-  .hero__container {
-    height: 758px;
-  }
-
   .hero__sidebar {
     display: none;
   }
