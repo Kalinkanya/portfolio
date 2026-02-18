@@ -1,1 +1,3 @@
-console.log('Hello')
+import { initBurgerMenu } from './js/burger-menu.js';
+initBurgerMenu();
+

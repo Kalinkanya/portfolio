@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Mulish';
-    src: url('./assets/fonts/Mulish-Italic.woff2') format('woff2');
+    src: url('../assets/fonts/Mulish-Italic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -95,6 +95,10 @@ label {
 body {
   font-family: var(--font-base);
   font-weight: 400;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .header,
