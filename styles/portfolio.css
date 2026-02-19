@@ -26,6 +26,29 @@
   margin-inline: -20px;
 }
 
+.portfolio__control-zone {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.portfolio__left-zone {
+  left: 0;
+  width: 30%;
+}
+
+.portfolio__center-zone {
+  left: 30%;
+  width: 40%;
+}
+
+.portfolio__right-zone {
+  right: 0;
+  width: 30%;
+}
+
 .portfolio__slider-wrapper {
   position: absolute;
   display: flex;
@@ -34,7 +57,7 @@
   left: 0;
   top: 0;
   transform: translateX(0);
-  transition: all 5s linear;
+  transition: all 3s linear;
 }
 
 .portfolio__slider-wrapper_center {
