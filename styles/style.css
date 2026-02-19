@@ -1,0 +1,126 @@
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./portfolio.css');
+@import url('./price.css');
+@import url('./faq.css');
+@import url('./footer.css');
+@import url('./modal.css');
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('../assets/fonts/Mulish-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('../assets/fonts/Mulish-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../assets/fonts/Oswald-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --font-heading: 'Oswald', sans-serif;
+  --font-base: 'Mulish', sans-serif;
+
+  --color-dark: #222222;
+  --color-white: #FFFFFF;
+  --color-accent: #FF3C3C;
+
+  --container-width: 1400px;
+  --container-padding-x: 20px;
+  --container-padding-y: 60px;
+
+  --border: 1px solid var(--color-dark);
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+a, a:link, a:visited  {
+  text-decoration: none;
+}
+
+a:hover  {
+  text-decoration: none;
+}
+
+input, button {
+	font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+label {
+	cursor: pointer;
+}
+
+body {
+  font-family: var(--font-base);
+  font-weight: 400;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.header,
+.hero__section,
+.portfolio__section,
+.faq__section,
+.footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.container {
+  max-width: calc(var(--container-width) + (var(--container-padding-x) * 2));
+  margin-inline: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 6px;
+}
