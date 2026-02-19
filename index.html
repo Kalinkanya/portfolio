@@ -191,7 +191,7 @@
             Choose the package that suits your story. All options are customizable to your needs.
           </p>
           <div class="price__cards-wrapper">
-            <div class="price__card">
+            <div class="price__card" data-modal-open>
               <div class="price__card-list">
                 <h3 class="price__card-title">Mini</h3>
                 <ul class="price__card-items">
@@ -208,7 +208,7 @@
                 <button type="button" class="price__card-button">Book now</button>
               </div>
             </div>
-            <div class="price__card">
+            <div class="price__card" data-modal-open>
               <div class="price__card-list">
                 <h3 class="price__card-title">Classic</h3>
                 <ul class="price__card-items">
@@ -227,7 +227,7 @@
                 <button type="button" class="price__card-button">Book now</button>
               </div>
             </div>
-            <div class="price__card">
+            <div class="price__card" data-modal-open>
               <div class="price__card-list">
                 <h3 class="price__card-title">Story</h3>
                 <ul class="price__card-items">
@@ -247,7 +247,7 @@
                 <button type="button" class="price__card-button">Book now</button>
               </div>
             </div>
-            <div class="price__card">
+            <div class="price__card" data-modal-open>
               <div class="price__card-list">
                 <h3 class="price__card-title">Wedding</h3>
                 <ul class="price__card-items">
@@ -439,7 +439,7 @@
         <div class="footer__form-group">
           <input type="text" class="footer__form-input" name="name" autocomplete="name" placeholder="your name">
           <input type="tel" class="footer__form-input" name="phone" autocomplete="tel" value="+1">
-          <button type="button" class="footer__form-button">book now</button>
+          <button type="button" class="footer__form-button" data-modal-open>book now</button>
         </div>
       </div>
       <div class="container footer__contacts">
@@ -450,6 +450,17 @@
         <a href="tel:+12349843572" class="footer__contacts-item">+1 234 9843572</a>
       </div>
     </footer>
+    <div class="modal">
+      <svg class="modal__close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M18 6L6 18" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 6L18 18" stroke="#222222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 class="modal__title">Like my portfolio? Sign up for a shoot!</h3>
+      <input type="text" class="modal-input" name="name" autocomplete="name" placeholder="your name">
+      <input type="tel" class="modal-input" name="phone" autocomplete="tel" value="+1">
+      <button type="button" class="modal-button" data-modal-open>book now</button>
+    </div>
+    <div class="overlay"></div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

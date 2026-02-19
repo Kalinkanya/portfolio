@@ -1,0 +1,95 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.overlay.visible {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 60px;
+  width: 500px;
+  height: 356px;
+  background-color: var(--color-white);
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.modal.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.modal-input {
+  height: 60px;
+  width: 100%;
+  border: 1px solid var(--color-dark);
+  padding-inline: 10px;
+  transition: all 0.5s;
+}
+
+.modal-input::placeholder {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+}
+
+.modal-button {
+  height: 60px;
+  width: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .modal-button:hover {
+    background-color: var(--color-accent);
+  }
+
+  .modal-input:hover {
+    border: 1px solid var(--color-accent);
+  }
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: calc(100% - 20px);
+  }
+}
