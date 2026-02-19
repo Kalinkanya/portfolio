@@ -58,31 +58,48 @@
   text-transform: uppercase;
 }
 
+.faq__trigger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
 .faq__trigger-open {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .faq__trigger-open.visible {
-  display: block;
+  opacity: 1;
 }
 
 .faq__trigger-closed {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .faq__trigger-closed.visible {
-  display: block;
+  opacity: 1;
 }
 
 .faq__answer {
   letter-spacing: 0.3px;
   line-height: 22px;
   padding-bottom: 18px;
-  display: none;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .faq__answer.faq__answer_visible {
-  display: block;
+  max-height: 300px;
+  opacity: 1;
 }
 
 @media (max-width: 850px) {
