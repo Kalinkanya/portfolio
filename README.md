@@ -20,3 +20,4 @@ Portfolio is a training project where I created a responsive landing page and ad
 - Opening/Closing of **accordions** in `FAQ` section
 - **Scroll Down** button in `Hero` section.
 - **Modal window**.
+<img width="770" height="458" alt="portfolio" src="https://github.com/user-attachments/assets/8767c847-834d-43b6-a98a-a075e64d25d8" />
